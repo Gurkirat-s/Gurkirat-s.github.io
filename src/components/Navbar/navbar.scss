@@ -1,0 +1,60 @@
+@import "../../general.scss";
+
+.navbar {
+  height: 65px;
+  // background: black;
+  color: #f1faee;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    margin: auto;
+    height: 100%;
+    width: 400px;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    align-items: center;
+    background-color: #457b9d;
+
+    .logo {
+    }
+
+    .links {
+      display: flex;
+      gap: 3rem;
+
+      li {
+        list-style-type: none;
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+
+      a {
+        position: relative;
+        // color: $text-lightgray;
+        color: #f1faee;
+        text-decoration: none;
+      }
+
+      a:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        // background-color: $text-lightgray;
+        background-color: #f1faee;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+
+      a:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+  }
+}
