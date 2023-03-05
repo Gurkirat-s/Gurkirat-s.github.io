@@ -28,16 +28,17 @@
         list-style-type: none;
         font-size: 1.1rem;
         font-weight: 300;
+        cursor: pointer;
       }
 
-      a {
+      .link {
         position: relative;
         // color: $text-lightgray;
         color: #f1faee;
         text-decoration: none;
       }
 
-      a:after {
+      .link:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -51,7 +52,7 @@
         transition: transform 0.25s ease-out;
       }
 
-      a:hover:after {
+      .link:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
       }

@@ -1,20 +1,26 @@
 @import "../../general.scss";
 
 .hero {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 65px);
   color: $text-lightgray;
+  display: flex;
+  align-items: center;
+  // flex-wrap: wrap;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     height: 100%;
+    margin-bottom: 5rem;
 
     .intro {
       padding-left: 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      margin: 5rem 0;
 
       h2 {
         font-size: 2rem;

@@ -3,9 +3,9 @@ import "./about.scss";
 
 const About = () => {
   return (
-    <div className="about" id="about">
-      <div className="container">
-        <h1>About Me</h1>
+    <div id="about" className="about" id="about">
+      <div className="container-small">
+        <h2>About Me</h2>
         <p>
           A subscriber to the philosophy of life-long learning, I am an
           enthusiastic Software Developer and Bachelors of Computer Science
@@ -18,14 +18,14 @@ const About = () => {
         </p>
 
         <div className="interests">
-          <h2>Hobbies and Interests</h2>
+          <h3>Hobbies and Interests</h3>
           <p>
             While I’m not coding, I enjoy hiking, running, playing boardgames
             and occasionally creating something out of wood.{" "}
           </p>
         </div>
         <div className="skills">
-          <h2>Skills</h2>
+          <h3>Skills</h3>
           <ul>
             <li>JavaScript</li>
             <li>Java</li>
