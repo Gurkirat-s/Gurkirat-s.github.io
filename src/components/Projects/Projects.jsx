@@ -35,8 +35,8 @@ const ProjectCard = ({ project }) => {
         {project.type && <h4>{project.type}</h4>}
         <p>{project.description}</p>
         <ul className="tools">
-          {project.tools.map((item) => {
-            return <li>{item}</li>;
+          {project.tools.map((item, index) => {
+            return <li key={index}>{item}</li>;
           })}
         </ul>
 

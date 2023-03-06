@@ -1,1 +1,10 @@
 @import "../../general.scss";
+
+.footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary1;
+  color: $text-lightgray;
+}
