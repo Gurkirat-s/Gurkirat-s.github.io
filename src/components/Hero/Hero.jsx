@@ -13,7 +13,7 @@ const Hero = () => {
           <a href="#projects">See some projects I've worked on</a>
         </div>
         <div className="img-container">
-          <img src={avatar} alt="Main Hero "></img>
+          <img src={avatar} alt="Main Hero"></img>
         </div>
       </div>
     </div>

@@ -22,53 +22,56 @@
   overflow: hidden;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
 
-  .img-container {
-    max-height: 300px;
-    // width: 300px;
-    max-width: 250px;
-    // border: 2px solid black;
-    // overflow: none;
-    overflow: hidden;
-    flex-shrink: 0;
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
+.project-card .img-container {
+  max-height: 500px;
+  // width: 300px;
+  max-width: 250px;
+  // border: 2px solid black;
+  // overflow: none;
+  overflow: hidden;
+  // flex-shrink: 0;
+}
 
-  .card-info {
-    padding: 1.5rem;
+.project-card .img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
-    h3 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: $primary1;
-      display: inline-block;
-    }
+.card-info {
+  padding: 1.5rem;
+}
 
-    h4 {
-      display: inline-block;
-      margin-left: 1rem;
-    }
+.card-info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: $primary1;
+  display: inline-block;
+  margin-right: 1rem;
+}
 
-    p {
-      font-size: 1rem;
-      font-weight: 300;
-      margin-bottom: 1rem;
-    }
+.card-info h4 {
+  display: inline-block;
+  // margin-left: 1rem;
+}
 
-    .tools {
-      display: flex;
-      gap: 0.7rem;
-      flex-wrap: wrap;
-      li {
-        list-style: none;
-        color: $primary1;
-      }
-    }
-  }
+.card-info p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.tools {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.tools li {
+  list-style: none;
+  color: $primary1;
 }
 
 .buttons {
@@ -97,8 +100,40 @@
   transition: all 0.3s ease-in-out;
 }
 
-.btn-github {
+@media all and (max-width: 850px) {
+  .card-info {
+    padding: 1rem;
+  }
+  .card-info h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .card-info h4 {
+    display: block;
+  }
 }
 
-.btn-demo {
+@media all and (max-width: 650px) {
+  .project-card .img-container {
+    max-width: 200px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .project-card {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .project-card .img-container {
+    max-width: 400px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .projects {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

@@ -1,39 +1,79 @@
 @import "../../general.scss";
+
 .about {
   padding: 1rem 0;
   margin: 0 2rem 10rem;
+}
 
-  .container-small {
-    // max-width: 700px;
-    color: $text-darkgray;
+.container-small {
+  // max-width: 700px;
+  color: $text-darkgray;
+}
 
-    p {
-      line-height: 1.3;
-      letter-spacing: 0.01rem;
-      font-size: 1.1rem;
-      // padding: 1rem 0;
-      margin-bottom: 2rem;
-    }
+.container-small p {
+  line-height: 1.3;
+  letter-spacing: 0.01rem;
+  font-size: 1.1rem;
+  // padding: 1rem 0;
+  margin-bottom: 2rem;
+}
 
-    h3 {
-      margin-bottom: 0.5rem;
-      font-size: 2rem;
-    }
+.container-small h3 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
 
-    .skills {
-      ul {
-        display: flex;
-        gap: 1.5rem;
-        font-size: 1.2rem;
-        flex-wrap: wrap;
-      }
-      li {
-        list-style-type: none;
-        background-color: $primary1;
-        color: $text-lightgray;
-        padding: 0.2rem 0.5rem;
-        border-radius: 0.4rem;
-      }
-    }
+.skills ul {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  list-style-type: none;
+  background-color: $primary1;
+  color: $text-lightgray;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+@media all and (max-width: 600px) {
+  .about {
+    margin-bottom: 8rem;
+  }
+
+  .container-small h3 {
+    font-size: 1.5rem;
+  }
+
+  .container-small p {
+    font-size: 1rem;
+  }
+
+  .container-small h2 {
+    font-size: 2.5rem;
+  }
+
+  .skills ul {
+    gap: 1rem;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .container-small h3 {
+    font-size: 1.5rem;
+  }
+
+  .container-small p {
+    font-size: 0.9rem;
+  }
+
+  .container-small h2 {
+    font-size: 2.5rem;
+  }
+
+  .skills ul {
+    gap: 0.8rem;
   }
 }

@@ -2,97 +2,112 @@
 
 .contact {
   margin-bottom: 6rem;
+}
 
-  .container-small {
-    margin: 0 auto;
-    max-width: 500px;
-  }
+.contact .container-small {
+  margin: 0 auto;
+  max-width: 500px;
+}
 
+.contact .container-small {
   h3 {
     font-size: 1.5rem;
     color: $text-darkgray;
     margin-bottom: 1rem;
   }
+}
 
-  .social-links {
-    margin: 0 auto 2rem;
-    display: flex;
-    justify-content: space-evenly;
+.social-links {
+  margin: 3rem auto 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-    a:link,
-    a:visited {
-      height: 75px;
-      width: 75px;
-      border: 2px solid $primary1;
-      border-radius: 0.7rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      color: $primary1;
-      transition: all 0.3s ease-in-out;
-    }
+.social-links a:link,
+.social-links a:visited {
+  height: 75px;
+  width: 75px;
+  border: 2px solid $primary1;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: $primary1;
+  transition: all 0.3s ease-in-out;
+}
 
-    a:hover,
-    a:active {
-      color: $text-lightgray;
-      background-color: $primary1;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-    }
+.social-links a:hover,
+.social-links a:active {
+  color: $text-lightgray;
+  background-color: $primary1;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact form div {
+  // background: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  // padding: 1rem;
+  gap: 1rem;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  padding: 0.75rem 1rem;
+  color: $primary1;
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.btn-submit {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  background-color: $primary1;
+  color: $text-lightgray;
+  padding: 0.5rem 4rem;
+  //   margin-right: 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 2rem;
+}
+
+.btn-submit:hover {
+  background-color: $primary-shade1;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.message {
+  height: 200px;
+  text-justify: initial;
+  resize: none;
+}
+
+//--------------
+
+@media all and (max-width: 550px) {
+  .contact {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
+}
 
-  form div {
-    // background: rebeccapurple;
-    display: flex;
-    flex-direction: column;
-    // padding: 1rem;
-    gap: 1rem;
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      padding: 0.75rem 1rem;
-      color: $primary1;
-      font-size: 1.3rem;
-      border-radius: 0.4rem;
-      border: none;
-    }
-
-    .btn-submit {
-      margin: 0 auto;
-    }
-
-    .message {
-      height: 200px;
-      text-justify: initial;
-      resize: none;
-    }
-
-    .btn-submit {
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-
-      background-color: $primary1;
-      color: $text-lightgray;
-      padding: 0.5rem 4rem;
-      //   margin-right: 1rem;
-      border-radius: 0.4rem;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out;
-      font-size: 2rem;
-    }
-
-    .btn-submit:hover {
-      background-color: $primary-shade1;
-      transition: all 0.3s ease-in-out;
-      cursor: pointer;
-    }
-
-    input:focus,
-    textarea:focus {
-      outline: none;
-    }
+@media all and (max-width: 450px) {
+  .contact {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
