@@ -27,6 +27,7 @@
 .intro h2 {
   font-size: 2rem;
   color: #457b9d;
+  border: none;
 }
 
 .intro h1 {
@@ -44,8 +45,7 @@
   color: $text-darkgray;
 }
 
-.intro a:link,
-.intro a:visited {
+.intro .link {
   text-decoration: none;
   padding: 1rem;
   margin-top: 3rem;
@@ -54,14 +54,14 @@
   color: $primary1;
   font-weight: 500;
   font-size: 1.3rem;
-  transition: 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
 }
 
-.intro a:hover,
-.intro a:active {
+.intro .link:hover {
   background-color: $primary1;
   color: $text-lightgray;
-  transition: 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .hero .img-container img {

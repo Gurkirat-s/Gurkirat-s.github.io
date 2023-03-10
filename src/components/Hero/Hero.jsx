@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.scss";
-import avatar from "../../assets/hero-img.png";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -10,10 +10,9 @@ const Hero = () => {
           <h2>Hi, my name is</h2>
           <h1>Gurkirat Singh</h1>
           <p>I'm a Software Developer from Brampton, Ontario.</p>
-          <a href="#projects">See some projects I've worked on</a>
-        </div>
-        <div className="img-container">
-          <img src={avatar} alt="Main Hero"></img>
+          <Link className="link" to="projects" spy={true} smooth={true}>
+            See some projects I've worked on
+          </Link>
         </div>
       </div>
     </div>

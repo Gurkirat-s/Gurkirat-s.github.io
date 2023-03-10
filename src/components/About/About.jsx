@@ -24,22 +24,6 @@ const About = () => {
             and occasionally creating something out of wood.{" "}
           </p>
         </div>
-        <div className="skills">
-          <h3>Skills</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>HTML5</li>
-            <li>CSS3/SASS</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Firebase</li>
-            <li>SQL</li>
-            <li>Object Oriented Principles</li>
-            <li>Next.js</li>
-            <li>Git</li>
-          </ul>
-        </div>
         <p></p>
       </div>
     </div>

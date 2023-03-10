@@ -23,21 +23,6 @@
   font-size: 2rem;
 }
 
-.skills ul {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 1.2rem;
-  flex-wrap: wrap;
-}
-
-.skills li {
-  list-style-type: none;
-  background-color: $primary1;
-  color: $text-lightgray;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.4rem;
-}
-
 @media all and (max-width: 600px) {
   .about {
     margin-bottom: 8rem;
@@ -54,10 +39,6 @@
   .container-small h2 {
     font-size: 2.5rem;
   }
-
-  .skills ul {
-    gap: 1rem;
-  }
 }
 
 @media all and (max-width: 400px) {
@@ -65,15 +46,7 @@
     font-size: 1.5rem;
   }
 
-  .container-small p {
-    font-size: 0.9rem;
-  }
-
   .container-small h2 {
     font-size: 2.5rem;
-  }
-
-  .skills ul {
-    gap: 0.8rem;
   }
 }
