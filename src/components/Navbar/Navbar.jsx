@@ -34,6 +34,17 @@ const Navbar = () => {
             <Link
               onClick={handleNavbarToggle}
               className="link"
+              to="skills"
+              spy={true}
+              smooth={true}
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={handleNavbarToggle}
+              className="link"
               to="projects"
               spy={true}
               smooth={true}

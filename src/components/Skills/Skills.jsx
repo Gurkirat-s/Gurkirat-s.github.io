@@ -6,13 +6,13 @@ const Skills = () => {
   const skills = skillsData();
 
   return (
-    <div className="skills">
+    <div id="skills" className="skills">
       <div className="container-small">
         <h2>Skills</h2>
         <div className="skills-grid">
           {skills.map((item) => {
             return (
-              <div id={item.id} className="skill-card">
+              <div key={item.id} className="skill-card">
                 <img src={item.image} alt={`${item.title} `} />
                 <h4>{item.title}</h4>
               </div>

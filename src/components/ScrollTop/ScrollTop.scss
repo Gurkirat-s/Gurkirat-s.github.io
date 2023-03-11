@@ -1,0 +1,31 @@
+@import "../../general.scss";
+
+.scroll-top {
+  position: fixed;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 45px;
+  width: 45px;
+
+  border: 3px solid $primary1;
+  color: $primary1;
+  background-color: $text-lightgray;
+  border-radius: 5px;
+
+  bottom: 30px;
+  right: 30px;
+}
+
+.scroll-top a {
+  padding-top: 5px;
+}
+
+.scroll-top:hover {
+  cursor: pointer;
+  color: $text-lightgray;
+  background-color: $primary1;
+}
