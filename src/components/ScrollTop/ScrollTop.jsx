@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ScrollTop.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import { FaArrowUp } from "react-icons/fa";
 
 const ScrollTop = () => {
